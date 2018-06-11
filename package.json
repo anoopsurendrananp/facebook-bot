@@ -1,13 +1,15 @@
 {
-  "name": "Bridge",
+  "name": "messengerbot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "fbook.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "export NODE_ENV=production && ./node_modules/nodemon/bin/nodemon.js fbook.js",
+    "start-dev": "nodemon fbook.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Anoop Surendran",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -20,3 +22,4 @@
     "watson-developer-cloud": "^3.4.5"
   }
 }
+
